@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
+import { Link } from 'react-router-dom';
 
 
 function DescripcionProducto() {
@@ -40,7 +41,9 @@ function DescripcionProducto() {
                   />
                 </div>
                 <div className='d-flex justify-content-center'>
-                  <button type='button' className='btn' style={backgroundColorButton}>Contactar al proveedor</button>
+                  <Link to="/chat-producto">
+                    <button type='button' className='btn' style={backgroundColorButton}>Contactar al proveedor</button>
+                  </Link>
                 </div>
             </div>
             <div className='col-lg-5 col-md-6 col-sm-12 mb-2 px-4'> 
