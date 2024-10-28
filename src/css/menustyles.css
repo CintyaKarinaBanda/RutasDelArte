@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.menu {
+    position: absolute; /* Fijado en posición absoluta */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Padding reducido para hacer el menú más delgado */
+    background-color: #a5b76d;
+    width: 100%; /* Ancho del menú 100% */
+    left: 0; /* Ajustar a la izquierda */
+    top: 0; /* Ajustar a la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.menu .logo h1 {
+    font-size: 20px; /* Tamaño de fuente reducido */
+    color: #333;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+    color: #666;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espacio entre el campo de búsqueda y el ícono de búsqueda */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 8px 12px; /* Espaciado superior e inferior y lateral */
+    padding-left: 30px; /* Espacio adicional a la izquierda para el placeholder */
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-cart input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-cart button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.user-icons {
+    display: flex;
+    gap: 30px; /* Espacio uniforme entre los íconos de usuario, carrito y corazón */
+}
+
+.user-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.user-icons i:hover {
+    transform: scale(1.1);
+}

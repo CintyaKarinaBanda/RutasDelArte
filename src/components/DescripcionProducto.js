@@ -29,7 +29,8 @@ function DescripcionProducto() {
     return (
       <>
         <Menu/>
-        <div className='container-fluid p-4'> 
+        <div className='mt-2'>.</div>
+        <div className='container-fluid p-4 mt-5'> 
           <div className='row'>
             <div className='col-lg-4 col-md-6 col-sm-12 mb-2'>  
                 <div>
